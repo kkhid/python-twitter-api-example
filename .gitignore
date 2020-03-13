@@ -1,0 +1,2 @@
+# config.yaml ファイルは除外
+src/config/*.yaml
