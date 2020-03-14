@@ -19,8 +19,12 @@ def main():
 
 def post_reply(tw, url):
 
-    message = "Pythonからrequestを使ってリプライ\n" + "2line"
-    params = {"status": message, "in_reply_to_status_id": "1238501413170212864"}
+    message = (
+        "PythonからTwitter APIを使ってリプライ\n"
+        + "#python #api #twitter\n"
+        + "https://khid.net/2020/03/python-twitter-api-post-tweet/"
+    )
+    params = {"status": message, "in_reply_to_status_id": "1238738470639525888"}
 
     res = tw.post(url, params=params)
 

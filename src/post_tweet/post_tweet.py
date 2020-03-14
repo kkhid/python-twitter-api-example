@@ -19,7 +19,11 @@ def main():
 
 def post_tw(tw, url):
 
-    message = "Pythonからrequestを使ってツイート\n" + "2line"
+    message = (
+        "PythonからTwitter APIを使ってツイート\n"
+        + "#python #api\n"
+        + "https://khid.net/2020/03/python-twitter-api-post-tweet/"
+    )
     params = {"status": message}
 
     res = tw.post(url, params=params)
